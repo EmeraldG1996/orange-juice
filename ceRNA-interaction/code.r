@@ -269,7 +269,7 @@ ceRNAs_sig<-function(geneid,cnv_M,mir_M,gene_exp,ceRNA_mir_list,mir_ceRNA_list,c
 }
 ###################################################################
 ##identify ceRNAs triplets
-driver_lnc<-function(Dname,input,freq_thr1,exp_thr,freq_thr2,p_thr,cthr1,cthr2,cthr3){
+driver_lnc<-function(Dname,input,cthr1,cthr2,cthr3){
   #' @param		Dname:		disease name
   #' @param		input:		Folder path
   #' @param		freq_thr1:		the threshold of copy number variation frequency
@@ -285,7 +285,7 @@ driver_lnc<-function(Dname,input,freq_thr1,exp_thr,freq_thr2,p_thr,cthr1,cthr2,c
   ##
   path_save<-paste(input,"/",Dname,sep="")
   setwd(path_save)
-  load("s1_result.RData")
+  #load("s1_result.RData")
   ## load("ce_mir.RData")
   ## cnv_M<-cnv_M[sig_genes,]
   
