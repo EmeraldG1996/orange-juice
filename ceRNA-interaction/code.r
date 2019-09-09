@@ -272,10 +272,6 @@ ceRNAs_sig<-function(geneid,cnv_M,mir_M,gene_exp,ceRNA_mir_list,mir_ceRNA_list,c
 driver_lnc<-function(Dname,input,cthr1,cthr2,cthr3){
   #' @param		Dname:		disease name
   #' @param		input:		Folder path
-  #' @param		freq_thr1:		the threshold of copy number variation frequency
-  #' @param		exp_thr:		the expression threshold(Next generation sequencing)
-  #' @param		freq_thr2:		Maximum proportion of expression loss
-  #' @param		min_thr:		a sample number threshold. If the number of samples in a certain state is less than min_thr, subsequent operations will be delete.
   #' @param		cthr1:		Correlation coefficient threshold,mir与ceRNA1
   #' @param		cthr2:		Correlation coefficient threshold,mir与ceRNA2
   #' @param		cthr3:		Correlation coefficient threshold,ceRNA2与ceRNA1
